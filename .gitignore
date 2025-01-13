@@ -1,0 +1,4 @@
+__pycache__/
+ICASSP24_Exps/*
+logs/*
+outputs/*

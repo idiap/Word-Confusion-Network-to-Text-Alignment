@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<example audio_id="audio-1497860840-headset" id="100_a165">
+  <sentence>i fancy some coffee now</sentence>
+  <tokens>
+    <token id="1" lemma="i" pos="PRON" surface="i"/>
+    <token id="2" lemma="fancy" pos="VERB" surface="fancy"/>
+    <token id="3" lemma="some" pos="DET" surface="some"/>
+    <token id="4" lemma="coffee" pos="NOUN" surface="coffee"/>
+    <token id="5" lemma="now" pos="ADV" surface="now"/>
+  </tokens>
+  <semantics>
+    <ner/>
+    <dialogueAct>
+      <token id="1" value="B-iot"/>
+      <token id="2" value="I-iot"/>
+      <token id="3" value="I-iot"/>
+      <token id="4" value="I-iot"/>
+      <token id="5" value="I-iot"/>
+    </dialogueAct>
+    <frame>
+      <frameElement/>
+      <token id="1" value="B-coffee"/>
+      <token id="2" value="I-coffee"/>
+      <token id="3" value="I-coffee"/>
+      <token id="4" value="I-coffee"/>
+      <token id="5" value="I-coffee"/>
+    </frame>
+  </semantics>
+</example>

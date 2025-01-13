@@ -1,0 +1,60 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+#
+# SPDX-FileCopyrightText: Copyright © <2024> Idiap Research Institute <contact@idiap.ch>
+#
+# SPDX-FileContributor: Esau Villatoro-Tello <esau.villatoro@idiap.ch>
+#
+# SPDX-License-Identifier: GPL-3.0-only
+
+# Dataset used for pretraining. WCN are precomputed and strored locally
+dataset_name: "PS"
+train_set: "/datasets/peoplespeech/train/"
+dev_set: "/datasets/peoplespeech/test/"
+
+test_dataset_name: "SLURP"
+test_set: "/datasets/slurp/test"
+test_set_audios: "/datasets/slurp/audios/"
+mode: "pretrain"
+
+#These will be used if the cross-modal SLU_Hybrid experiment is ON
+text_dim: 768
+#Acoustic features can be either "LFB" or "WCN"
+acoustic_feats_type: "LFB"
+acoustic_dim: 80
+
+seed: 1
+#Number of heads for the LISTENER Class
+number_heads: 12
+#Number of layer for the cross attention module
+number_layers: 6
+#Number of layers and attention heads for the WCN encoder
+wcn_num_of_layers: 4
+wcn_num_attn_heads: 4
+#Learning rate
+learning_rate: 0.0001
+#dropout
+dropout: 0.1
+batch_size: 32
+epochs: 200
+steps: 600000
+validate_after: 2000
+checkpoint_after: 10000
+save_after: 100000
+save_model: True
+log_after: 500
+patience: 20
+
+#TextEmbeddings and Acoustic embeddings
+text_model: "bert-base-uncased"
+
+#Pre-trained LFB or WCN model. Must match with acoustic_feats_type parameter
+pretrained_model: "/tmp/Pretrained_Model.pt"
+
+#GPU parameters for DPP
+distributed: False
+num_jobs: 1
+gpu: '0'
+
+runs_folder: "/tmp/Pretrain_Resutls"
+monitor: ["f1"]

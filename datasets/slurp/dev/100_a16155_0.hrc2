@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<example audio_id="audio-1490199777-headset" id="100_a16155">
+  <sentence>what is the address of tara john</sentence>
+  <tokens>
+    <token id="1" lemma="what" pos="NOUN" surface="what"/>
+    <token id="2" lemma="is" pos="VERB" surface="is"/>
+    <token id="3" lemma="the" pos="DET" surface="the"/>
+    <token id="4" lemma="address" pos="NOUN" surface="address"/>
+    <token id="5" lemma="of" pos="ADP" surface="of"/>
+    <token id="6" lemma="tara" pos="NOUN" surface="tara"/>
+    <token id="7" lemma="john" pos="PROPN" surface="john"/>
+  </tokens>
+  <semantics>
+    <ner/>
+    <dialogueAct>
+      <token id="1" value="B-email"/>
+      <token id="2" value="I-email"/>
+      <token id="3" value="I-email"/>
+      <token id="4" value="I-email"/>
+      <token id="5" value="I-email"/>
+      <token id="6" value="I-email"/>
+      <token id="7" value="I-email"/>
+    </dialogueAct>
+    <frame>
+      <frameElement>
+        <token id="4" value="personal_info"/>
+        <token id="6" value="person"/>
+        <token id="7" value="person"/>
+      </frameElement>
+      <token id="1" value="B-querycontact"/>
+      <token id="2" value="I-querycontact"/>
+      <token id="3" value="I-querycontact"/>
+      <token id="4" value="I-querycontact"/>
+      <token id="5" value="I-querycontact"/>
+      <token id="6" value="I-querycontact"/>
+      <token id="7" value="I-querycontact"/>
+    </frame>
+  </semantics>
+</example>

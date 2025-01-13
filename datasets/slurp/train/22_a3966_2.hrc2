@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<example audio_id="audio-1502377767" id="22_a3966">
+  <sentence>unto my catalog</sentence>
+  <tokens>
+    <token id="1" lemma="unto" pos="ADP" surface="unto"/>
+    <token id="2" lemma="my" pos="ADJ" surface="my"/>
+    <token id="3" lemma="catalog" pos="NOUN" surface="catalog"/>
+  </tokens>
+  <semantics>
+    <ner/>
+    <dialogueAct>
+      <token id="1" value="B-music"/>
+      <token id="2" value="I-music"/>
+      <token id="3" value="I-music"/>
+    </dialogueAct>
+    <frame>
+      <frameElement/>
+      <token id="1" value="B-likeness"/>
+      <token id="2" value="I-likeness"/>
+      <token id="3" value="I-likeness"/>
+    </frame>
+  </semantics>
+</example>

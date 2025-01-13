@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<example audio_id="audio-1490262439-headset" id="439_a14741">
+  <sentence>what are the specifications of the new iphone</sentence>
+  <tokens>
+    <token id="1" lemma="what" pos="NOUN" surface="what"/>
+    <token id="2" lemma="are" pos="VERB" surface="are"/>
+    <token id="3" lemma="the" pos="DET" surface="the"/>
+    <token id="4" lemma="specifications" pos="NOUN" surface="specifications"/>
+    <token id="5" lemma="of" pos="ADP" surface="of"/>
+    <token id="6" lemma="the" pos="DET" surface="the"/>
+    <token id="7" lemma="new" pos="ADJ" surface="new"/>
+    <token id="8" lemma="iphone" pos="NOUN" surface="iphone"/>
+  </tokens>
+  <semantics>
+    <ner/>
+    <dialogueAct>
+      <token id="1" value="B-general"/>
+      <token id="2" value="I-general"/>
+      <token id="3" value="I-general"/>
+      <token id="4" value="I-general"/>
+      <token id="5" value="I-general"/>
+      <token id="6" value="I-general"/>
+      <token id="7" value="I-general"/>
+      <token id="8" value="I-general"/>
+    </dialogueAct>
+    <frame>
+      <frameElement/>
+      <token id="1" value="B-quirky"/>
+      <token id="2" value="I-quirky"/>
+      <token id="3" value="I-quirky"/>
+      <token id="4" value="I-quirky"/>
+      <token id="5" value="I-quirky"/>
+      <token id="6" value="I-quirky"/>
+      <token id="7" value="I-quirky"/>
+      <token id="8" value="I-quirky"/>
+    </frame>
+  </semantics>
+</example>

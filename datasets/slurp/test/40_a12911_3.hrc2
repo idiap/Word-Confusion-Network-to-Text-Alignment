@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<example audio_id="audio-1490204462" id="40_a12911">
+  <sentence>i need a ride in an hour</sentence>
+  <tokens>
+    <token id="1" lemma="i" pos="PRON" surface="i"/>
+    <token id="2" lemma="need" pos="VERB" surface="need"/>
+    <token id="3" lemma="a" pos="DET" surface="a"/>
+    <token id="4" lemma="ride" pos="NOUN" surface="ride"/>
+    <token id="5" lemma="in" pos="ADP" surface="in"/>
+    <token id="6" lemma="an" pos="DET" surface="an"/>
+    <token id="7" lemma="hour" pos="NOUN" surface="hour"/>
+  </tokens>
+  <semantics>
+    <ner>
+      <token id="6" value="B-TIME"/>
+      <token id="7" value="I-TIME"/>
+    </ner>
+    <dialogueAct>
+      <token id="1" value="B-transport"/>
+      <token id="2" value="I-transport"/>
+      <token id="3" value="I-transport"/>
+      <token id="4" value="I-transport"/>
+      <token id="5" value="I-transport"/>
+      <token id="6" value="I-transport"/>
+      <token id="7" value="I-transport"/>
+    </dialogueAct>
+    <frame>
+      <frameElement>
+        <token id="5" value="time"/>
+        <token id="6" value="time"/>
+        <token id="7" value="time"/>
+      </frameElement>
+      <token id="1" value="B-taxi"/>
+      <token id="2" value="I-taxi"/>
+      <token id="3" value="I-taxi"/>
+      <token id="4" value="I-taxi"/>
+      <token id="5" value="I-taxi"/>
+      <token id="6" value="I-taxi"/>
+      <token id="7" value="I-taxi"/>
+    </frame>
+  </semantics>
+</example>

@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<example audio_id="audio-1499265418-headset" id="25_a10408">
+  <sentence>i want to play the game ofm of live with you</sentence>
+  <tokens>
+    <token id="1" lemma="i" pos="PRON" surface="i"/>
+    <token id="2" lemma="want" pos="VERB" surface="want"/>
+    <token id="3" lemma="to" pos="PART" surface="to"/>
+    <token id="4" lemma="play" pos="VERB" surface="play"/>
+    <token id="5" lemma="the" pos="DET" surface="the"/>
+    <token id="6" lemma="game" pos="NOUN" surface="game"/>
+    <token id="7" lemma="ofm" pos="NOUN" surface="ofm"/>
+    <token id="8" lemma="of" pos="ADP" surface="of"/>
+    <token id="9" lemma="live" pos="NOUN" surface="live"/>
+    <token id="10" lemma="with" pos="ADP" surface="with"/>
+    <token id="11" lemma="you" pos="PRON" surface="you"/>
+  </tokens>
+  <semantics>
+    <ner/>
+    <dialogueAct>
+      <token id="1" value="B-play"/>
+      <token id="2" value="I-play"/>
+      <token id="3" value="I-play"/>
+      <token id="4" value="I-play"/>
+      <token id="5" value="I-play"/>
+      <token id="6" value="I-play"/>
+      <token id="7" value="I-play"/>
+      <token id="8" value="I-play"/>
+      <token id="9" value="I-play"/>
+      <token id="10" value="I-play"/>
+      <token id="11" value="I-play"/>
+    </dialogueAct>
+    <frame>
+      <frameElement>
+        <token id="5" value="game_name"/>
+        <token id="6" value="game_name"/>
+        <token id="7" value="game_name"/>
+        <token id="8" value="game_name"/>
+        <token id="9" value="game_name"/>
+      </frameElement>
+      <token id="1" value="B-game"/>
+      <token id="2" value="I-game"/>
+      <token id="3" value="I-game"/>
+      <token id="4" value="I-game"/>
+      <token id="5" value="I-game"/>
+      <token id="6" value="I-game"/>
+      <token id="7" value="I-game"/>
+      <token id="8" value="I-game"/>
+      <token id="9" value="I-game"/>
+      <token id="10" value="I-game"/>
+      <token id="11" value="I-game"/>
+    </frame>
+  </semantics>
+</example>

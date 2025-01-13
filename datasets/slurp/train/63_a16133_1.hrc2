@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<example audio_id="audio-1488987326" id="63_a16133">
+  <sentence>send email to mom id that i'll be going to the party</sentence>
+  <tokens>
+    <token id="1" lemma="send" pos="VERB" surface="send"/>
+    <token id="2" lemma="email" pos="NOUN" surface="email"/>
+    <token id="3" lemma="to" pos="ADP" surface="to"/>
+    <token id="4" lemma="mom" pos="NOUN" surface="mom"/>
+    <token id="5" lemma="id" pos="NOUN" surface="id"/>
+    <token id="6" lemma="that" pos="ADP" surface="that"/>
+    <token id="7" lemma="i'll" pos="PRON" surface="i'll"/>
+    <token id="8" lemma="be" pos="VERB" surface="be"/>
+    <token id="9" lemma="going" pos="VERB" surface="going"/>
+    <token id="10" lemma="to" pos="VERB" surface="to"/>
+    <token id="11" lemma="the" pos="VERB" surface="the"/>
+    <token id="12" lemma="party" pos="DET" surface="party"/>
+  </tokens>
+  <semantics>
+    <ner/>
+    <dialogueAct>
+      <token id="1" value="B-email"/>
+      <token id="2" value="I-email"/>
+      <token id="3" value="I-email"/>
+      <token id="4" value="I-email"/>
+      <token id="5" value="I-email"/>
+      <token id="6" value="I-email"/>
+      <token id="7" value="I-email"/>
+      <token id="8" value="I-email"/>
+      <token id="9" value="I-email"/>
+      <token id="10" value="I-email"/>
+      <token id="11" value="I-email"/>
+      <token id="12" value="I-email"/>
+    </dialogueAct>
+    <frame>
+      <frameElement>
+        <token id="4" value="relation"/>
+        <token id="5" value="relation"/>
+      </frameElement>
+      <token id="1" value="B-sendemail"/>
+      <token id="2" value="I-sendemail"/>
+      <token id="3" value="I-sendemail"/>
+      <token id="4" value="I-sendemail"/>
+      <token id="5" value="I-sendemail"/>
+      <token id="6" value="I-sendemail"/>
+      <token id="7" value="I-sendemail"/>
+      <token id="8" value="I-sendemail"/>
+      <token id="9" value="I-sendemail"/>
+      <token id="10" value="I-sendemail"/>
+      <token id="11" value="I-sendemail"/>
+      <token id="12" value="I-sendemail"/>
+    </frame>
+  </semantics>
+</example>

@@ -1,0 +1,73 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+#
+# SPDX-FileCopyrightText: Copyright © <2024> Idiap Research Institute <contact@idiap.ch>
+#
+# SPDX-FileContributor: Esau Villatoro-Tello <esau.villatoro@idiap.ch>
+#
+# SPDX-License-Identifier: GPL-3.0-only
+
+#Experiment were performed on the SLURP dataset
+dataset_name: "SLURP"
+## SLURP files in XML format (hrc2 - files)
+train_set: "/datasets/slurp/train"
+dev_set: "/datasets/slurp/dev"
+test_set: "/datasets/slurp/test"
+
+## Here are the paths where the WCN will be searched
+train_WCN_file: "/datasets/slurp/train/train_WCN.csv"
+dev_WCN_file: "/datasets/slurp/dev/dev_WCN.csv"
+test_WCN_file: "/datasets/slurp/test/test_WCN.csv"
+test_set_audios: "/datasets/slurp/audios/"
+# Running mode
+# Two possible  values 'slu_ft' and "evaluate_slu_ft".
+# slu_ft trains the model on SLURP dataset for performing Intent Clasificaiton
+# evaluate_slu_ft evaluates the accuracy of the alignments of the model
+mode: "slu_ft"
+
+#Parameters for the textual embeddings dimensionality [BERT-768]
+text_dim: 768
+
+#Acoustic features can be either "LFB" or "WCN"
+#The dimensionality for WCN is 768
+#The dimensionality for LFB is 80
+acoustic_feats_type: "LFB"
+acoustic_dim: 80
+
+
+seed: 1111
+## For the LISTENER
+number_heads: 12
+# FOR THE CORSS_ATTENTION
+number_layers: 6
+#FOR THE WCN ENCODER
+wcn_num_of_layers: 12
+wcn_num_attn_heads: 12
+learning_rate: 0.00002
+#learning_rate: 0.00009
+dropout: 0.2
+
+#BATCHSIZE 32 if 1 GPU, 128 if 4 GPUS, 256 if 8 GPUs available
+batch_size: 32
+epochs: 200
+steps: 200
+validate_after: 100
+checkpoint_after: 10
+save_after: 100
+save_model: True
+log_after: 100
+patience: 20
+
+# TextEmbeddings and Acoustic embeddings
+text_model: "bert-base-uncased"
+
+# This valiable must point to the checkpoint of the pretrained model
+pretrained_model: "/chkpt/Pretrained_Model.pt"
+
+#GPU parameters for DPP
+distributed: Flase
+num_jobs: 1
+gpu: '0'
+#Output folder
+runs_folder: "/tmp/IC_results"
+monitor: ["f1"]

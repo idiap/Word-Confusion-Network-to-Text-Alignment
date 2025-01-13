@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<example audio_id="audio-1492779763" id="55_a4843">
+  <sentence>please give me the date today</sentence>
+  <tokens>
+    <token id="1" lemma="please" pos="INTJ" surface="please"/>
+    <token id="2" lemma="give" pos="VERB" surface="give"/>
+    <token id="3" lemma="me" pos="PRON" surface="me"/>
+    <token id="4" lemma="the" pos="DET" surface="the"/>
+    <token id="5" lemma="date" pos="NOUN" surface="date"/>
+    <token id="6" lemma="today" pos="NOUN" surface="today"/>
+  </tokens>
+  <semantics>
+    <ner>
+      <token id="6" value="B-DATE"/>
+    </ner>
+    <dialogueAct>
+      <token id="1" value="B-datetime"/>
+      <token id="2" value="I-datetime"/>
+      <token id="3" value="I-datetime"/>
+      <token id="4" value="I-datetime"/>
+      <token id="5" value="I-datetime"/>
+      <token id="6" value="I-datetime"/>
+    </dialogueAct>
+    <frame>
+      <frameElement>
+        <token id="6" value="date"/>
+      </frameElement>
+      <token id="1" value="B-query"/>
+      <token id="2" value="I-query"/>
+      <token id="3" value="I-query"/>
+      <token id="4" value="I-query"/>
+      <token id="5" value="I-query"/>
+      <token id="6" value="I-query"/>
+    </frame>
+  </semantics>
+</example>

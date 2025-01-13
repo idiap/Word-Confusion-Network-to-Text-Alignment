@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<example audio_id="audio--1505324728-headset" id="62_a16976">
+  <sentence>please find a mail address of manage and tell me</sentence>
+  <tokens>
+    <token id="1" lemma="please" pos="INTJ" surface="please"/>
+    <token id="2" lemma="find" pos="VERB" surface="find"/>
+    <token id="3" lemma="a" pos="DET" surface="a"/>
+    <token id="4" lemma="mail" pos="NOUN" surface="mail"/>
+    <token id="5" lemma="address" pos="NOUN" surface="address"/>
+    <token id="6" lemma="of" pos="ADP" surface="of"/>
+    <token id="7" lemma="manage" pos="NOUN" surface="manage"/>
+    <token id="8" lemma="and" pos="CCONJ" surface="and"/>
+    <token id="9" lemma="tell" pos="VERB" surface="tell"/>
+    <token id="10" lemma="me" pos="PRON" surface="me"/>
+  </tokens>
+  <semantics>
+    <ner/>
+    <dialogueAct>
+      <token id="1" value="B-email"/>
+      <token id="2" value="I-email"/>
+      <token id="3" value="I-email"/>
+      <token id="4" value="I-email"/>
+      <token id="5" value="I-email"/>
+      <token id="6" value="I-email"/>
+      <token id="7" value="I-email"/>
+      <token id="8" value="I-email"/>
+      <token id="9" value="I-email"/>
+      <token id="10" value="I-email"/>
+    </dialogueAct>
+    <frame>
+      <frameElement>
+        <token id="4" value="personal_info"/>
+        <token id="5" value="personal_info"/>
+        <token id="7" value="person"/>
+      </frameElement>
+      <token id="1" value="B-querycontact"/>
+      <token id="2" value="I-querycontact"/>
+      <token id="3" value="I-querycontact"/>
+      <token id="4" value="I-querycontact"/>
+      <token id="5" value="I-querycontact"/>
+      <token id="6" value="I-querycontact"/>
+      <token id="7" value="I-querycontact"/>
+      <token id="8" value="I-querycontact"/>
+      <token id="9" value="I-querycontact"/>
+      <token id="10" value="I-querycontact"/>
+    </frame>
+  </semantics>
+</example>
